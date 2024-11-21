@@ -1,3 +1,5 @@
 .contents*
 Vendor/
 *.bak
+.env
+.htaccess

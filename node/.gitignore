@@ -1,2 +1,4 @@
 .contents*
 node_modules/
+.env
+*.bak

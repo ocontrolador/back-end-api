@@ -1,12 +1,12 @@
 # API Imersão Dev Back-End Alura
 
-**Descrição:** API RESTful desenvolvida durante a Imersão Dev Back-End da Alura.  [Descreva brevemente a funcionalidade da sua API].
+**Descrição:** API RESTful desenvolvida durante a Imersão Dev Back-End da Alura.
 
 ## Tecnologias
 
 * Node.js
 * Express.js
-* [Outras tecnologias]
+* Deno.js
 
 ## Instalação
 
@@ -20,11 +20,11 @@
 
 `npm start`
 
-## Endpoints
 
-[Descreva seus endpoints aqui]
+## Dependências
+
+* express
+* mongodb
 
 
-## Autor
 
-[Seu nome/link para contato]
