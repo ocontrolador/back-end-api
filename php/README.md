@@ -1,28 +1,26 @@
 
 # API Alura Imersão Dev Back-end
 
-[Descreva brevemente o projeto e sua funcionalidade]
 
 ## Pré-requisitos
 
-* PHP [versão]
+* PHP 8.3
 * Composer
 
 ## Instalação
 
-1. `git clone <URL do repositório>`
-2. `cd <nome do diretório>`
+1. `git git@github.com:ocontrolador/back-end-api.git`
+2. `cd back-end-api/php`
 3. `composer install`
-4. [Configurações adicionais, se necessárias]
 
 ## Como usar
 
-[Instruções de uso, exemplos de requisições, etc.]
-
-## Contribuindo
-
-[Informações sobre como contribuir para o projeto]
+1. `php -S 127.0.0.1:3001 server.php`
+2. `curl -s 127.0.0.1:3001/posts/3|jq` # retorna registro 3 no formato JSON
+3. `curl -I 127.0.0.1:3001/nada` # rota não encontrada
+4. `curl -i 127.0.0.1:3001/posts/100` # registro não encontrado
 
 ## Licença
 
-[Mencione a licença, ex: MIT]
+MIT Licence
+
