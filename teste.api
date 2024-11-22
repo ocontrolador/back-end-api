@@ -1,0 +1,26 @@
+#!/bin/bash
+# ATCO Dias
+# 22/11/2024
+# teste.api Testar a API
+
+function pergunta() {
+  read -rp "${@} [S/n]?" -e Resp
+  Resp=${Resp:-'S'}
+  SIM=$([[ ${Resp^^} == @(S|SIM|Y|YES) ]] && echo true || echo false)
+}
+
+pergunta "GET all users"
+$SIM && curl -X GET http://localhost:3000/
+
+pergunta "GET a single user by ID"
+$SIM && curl -X GET http://localhost/1
+
+pergunta "POST a new user"
+$SIM && curl -X POST -H "Content-Type: application/json" -d '{"descricao": "Gato curioso olhando", "imgurl": "https://placekitten.com/400/200", "alt": "Gato curioso olhando pela janela"}' http://localhost:3000/
+
+pergunta "PUT update a user by ID"
+$SIM && curl -X PUT -H "Content-Type: application/json" -d '{"descricao": "Gato curioso"}' http://localhost:3000/1
+
+pregunta "DELETE a user by ID"
+$SIM && curl -X DELETE http://localhost:3000/1
+
