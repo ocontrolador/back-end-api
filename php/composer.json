@@ -1,0 +1,9 @@
+{
+    "name": "alura/back-end",
+    "autoload": {
+        "psr-4": {
+            "Alura\\BackEnd\\": "src/"
+        }
+    },
+    "require": {}
+}

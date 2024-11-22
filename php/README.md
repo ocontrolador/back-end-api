@@ -7,11 +7,26 @@
 * PHP 8.3
 * Composer
 
+## Criação
+
+```sh
+mkdir alura-api
+cd alura-api
+composer init --no-interaction --name="alura/back-end" -a"src/"
+composer require mongodb/mongodb vlucas/phpdotenv
+composer dump-autoload
+mkdir -p src/config src/Controllers src/Models src/routes public vendor
+touch .env composer.json README.md public/index.php src/config/dbConfig.php src/Controllers/PostsController.php src/Models/PostsModels.php src/routes/postsRoutes.php
+```
+
 ## Instalação
 
-1. `git git@github.com:ocontrolador/back-end-api.git`
-2. `cd back-end-api/php`
-3. `composer install`
+```sh
+git git@github.com:ocontrolador/back-end-api.git
+cd back-end-api/php
+composer install
+cp env.exemple .env
+```
 
 ## Como usar
 
