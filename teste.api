@@ -10,10 +10,10 @@ function pergunta() {
 }
 
 pergunta "GET all users"
-$SIM && curl -X GET http://localhost:3000/
+$SIM && curl -X GET http://localhost:3000/|jq
 
 pergunta "GET a single user by ID"
-$SIM && curl -X GET http://localhost/1
+$SIM && curl -X GET http://localhost/1|jq
 
 pergunta "POST a new user"
 $SIM && curl -X POST -H "Content-Type: application/json" -d '{"descricao": "Gato curioso olhando", "imgurl": "https://placekitten.com/400/200", "alt": "Gato curioso olhando pela janela"}' http://localhost:3000/
