@@ -48,6 +48,7 @@ function getPostById($id) : array
 function apiRouter($request) {
     global $posts;
     $path = explode('/', trim($request, '/'));
+    dd($path);
 
     $route = match ($path[0]) {
         'posts' => isset($path[1]) ? getPostById($path[1]) : $posts,
@@ -60,7 +61,6 @@ function apiRouter($request) {
     echo json_encode($route);
 }
 
-var_dump($_SERVER);
-var_dump(parse_url($_SERVER['REQUEST_URI']);
+var_dump($_SERVER['REQUEST_URI']);
 apiRouter($_SERVER['REQUEST_URI']);
 

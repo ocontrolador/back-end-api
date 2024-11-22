@@ -18,8 +18,8 @@
 
 ## Execução
 
-`npm start`
-
+`npm run dev` # "dev": "node --watch --env-file=.env server.js"
+`curl -s 127.0.0.1:3000/posts|jq` # visualiza os posts
 
 ## Dependências
 

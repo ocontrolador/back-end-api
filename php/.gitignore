@@ -3,3 +3,6 @@ Vendor/
 *.bak
 .env
 .htaccess
+public/.env
+public/teste.php
+public/.htaccess
